@@ -1,0 +1,149 @@
+/* Ensure the page takes full height */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: #161b22;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  border: 1px solid #30363d;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #f0f6fc;
+  font-size: 1.5rem;
+}
+
+/* Responsive Dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: #0d1117;
+  color: #c9d1d9;
+  cursor: pointer;
+}
+
+/* Responsive Button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  background-color: #238636;
+  color: white;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #2ea043;
+}
+
+button:disabled {
+  background-color: #161b22;
+  cursor: not-allowed;
+}
+
+/* GitHub-style Repo Card */
+.repo-card {
+  background: #161b22;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  text-align: left;
+}
+
+.repo-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.repo-card a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.repo-card a:hover {
+  text-decoration: underline;
+}
+
+.repo-card p {
+  font-size: 14px;
+  color: #8b949e;
+  margin: 5px 0 0;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid #30363d;
+  padding: 15px 0;
+  margin-top: 1rem;
+  font-size: 15px;
+  color: #8b949e;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  
+}
+footer a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Loading Indicator */
+.loading {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #8b949e;
+  display: none;
+}
+
+/* Mobile Optimization */
+@media (max-width: 500px) {
+  .container {
+      padding: 1rem;
+  }
+  h2 {
+      font-size: 1.3rem;
+  }
+  button {
+      font-size: 13px;
+      padding: 10px;
+  }
+  .repo-card p {
+      font-size: 12px;
+  }
+  footer {
+      font-size: 12px;
+  }
+}
